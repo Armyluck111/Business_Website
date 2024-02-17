@@ -1,0 +1,1111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+#herodiv {
+  height: 100vh;
+  background-image: url("photos/hero-min.jpg");
+  background-position: 50%;
+  background-size: cover;
+  object-fit: cover;
+}
+#herofilter {
+  height: 100vh;
+  background-color: rgb(0 0 0 / 52%);
+}
+header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2.5rem 1rem;
+}
+#darklogologo {
+  display: none;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#headericon {
+  font-size: 1.5rem;
+  display: none;
+}
+.heroli {
+  color: white;
+  font-weight: 500;
+}
+.heroli:hover {
+  color: gray;
+}
+#leftcontenthero {
+  padding: 4rem 4rem;
+  height: auto;
+}
+#leftcontenthero h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+#leftcontenthero p {
+  font-size: 1.2rem;
+}
+#leftcontenthero button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#contentherobutton button:hover{
+background-color: black;
+color: white;
+transform: all ease 800ms;
+cursor: pointer;
+}
+.contenthero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#rightcontenthero {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 8rem;
+}
+header img {
+  cursor: pointer;
+}
+#headerimgs {
+  display: flex;
+}
+header ul li {
+  cursor: pointer;
+}
+.modern h2,p{
+  padding-left: 0.5rem;
+}
+@media only screen and (max-width: 992px) {
+  .heroli {
+    display: none;
+  }
+  .herohome {
+    display: none;
+  }
+  #headericon {
+    display: flex;
+  }
+  header {
+    background-color: white;
+  }
+  #darklogologo {
+    display: flex;
+  }
+  #leftcontenthero {
+    font-size: 1.2rem;
+  }
+  #rightcontenthero {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .heroli {
+    display: none;
+  }
+  .herohome {
+    display: none;
+  }
+  #headericon {
+    display: flex;
+  }
+  header {
+    background-color: white;
+  }
+  #darklogologo {
+    display: flex;
+  }
+  #leftcontenthero {
+    font-size: 1.1rem;
+  }
+  #rightcontenthero {
+    display: none;
+  }
+  #contentherobutton {
+    margin-bottom: 1rem;
+  }
+  #herodiv {
+    height: auto;
+  }
+  #herofilter {
+    height: auto;
+  }
+}
+#Home2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 6rem;
+}
+#Home2 h2 {
+  font-size: 1.2rem;
+}
+#Home2 p {
+  font-size: 0.9rem;
+  color: #656565;
+}
+.linediv {
+  background-color: #dedede;
+  width: 100%;
+  height: 1px;
+  margin-top: 4rem;
+}
+
+#courseldiv {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 6rem;
+  height: 100vh;
+}
+
+.content_filter {
+  background-color: black;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Increase the z-index value to appear above the other elements */
+}
+
+#imgs {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#firstcoursel {
+  height: 25rem;
+  background-image: url("photos/c1.jpg");
+  background-position: 50%;
+  background-size: 105%;
+  object-fit: cover;
+  cursor: pointer;
+}
+#firstcoursel:hover {
+  .cfilter {
+    display: flex;
+    transition: all ease 900ms;
+  }
+  background-size: 130%;
+  transition: all ease 900ms;
+  background-repeat: no-repeat;
+}
+
+#secondcoursel {
+  height: 25rem;
+  background-image: url("photos/c2.jpg");
+  background-position: 50%;
+  background-size: 105%;
+  object-fit: cover;
+  cursor: pointer;
+}
+#secondcoursel:hover {
+  .cfilter {
+    display: flex;
+    transition: all ease 900ms;
+  }
+  background-size: 130%;
+  transition: all ease 900ms;
+  background-repeat: no-repeat;
+}
+#thirdcoursel {
+  height: 25rem;
+  background-image: url("photos/c3.jpg");
+  background-position: 50%;
+  background-size: 105%;
+  object-fit: cover;
+  cursor: pointer;
+}
+#thirdcoursel:hover {
+  .cfilter {
+    display: flex;
+    transition: all ease 900ms;
+  }
+  background-size: 130%;
+  transition: all ease 900ms;
+  background-repeat: no-repeat;
+}
+#courseldiv h1 {
+  padding-left: 9rem;
+}
+.cfilter {
+  height: 25rem;
+  background-color: rgb(0 0 0 / 70%);
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-left: 1rem;
+  display: none;
+}
+.filteri {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: baseline;
+}
+.cicon {
+  padding-right: 1rem;
+  color: white;
+}
+.filteri p {
+  font-size: 1.3rem;
+}
+.courselbutton {
+  padding-top: 3rem;
+  text-align: center;
+}
+#buttonofcoursel {
+  border: 0;
+  color: white;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 15px 40px;
+  background-color: #252525;
+}
+@media only screen and (max-width: 768px) {
+  #courseldiv h1 {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #courseldiv h1 {
+    text-align: center;
+    padding: 0;
+  }
+}
+#amazingsection {
+  height: auto;
+  background-color: #f0f0f1;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 6rem 0;
+}
+#amazingsection h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.amazingpwithicon {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 120px;
+}
+.amazingp {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.amzing1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.amzing2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.amzing3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.amzing4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.amzing5 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+.amzing6 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+#whattheysay {
+  margin-top: 5rem;
+  background-color: #f0f0f1;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 5rem 0;
+}
+#whattheysay h1 {
+  text-align: center;
+  padding-top: 3rem;
+}
+.linedivwhat {
+  background-color: #656565;
+  height: 1px;
+  margin: auto;
+}
+.CEOIMG {
+  width: 70px;
+}
+.quma {
+  display: flex;
+}
+.CEO {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.whattheysay1 {
+  background-color: #ffffff;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 1rem 1rem;
+}
+.whattheysay2 {
+  background-color: #ffffff;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 1rem 1rem;
+}
+.whattheysay3 {
+  background-color: #ffffff;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 1rem 1rem;
+}
+#clients {
+  background-color: #252525;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9rem 0;
+}
+
+#rightclient {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 40px;
+}
+.clientimg {
+  padding: 0.5rem 1.9rem;
+}
+#leftclient {
+  display: flex;
+  padding-left: 5rem;
+}
+@media only screen and (max-width: 768px) {
+  #leftclient {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #leftclient {
+    text-align: center;
+  }
+}
+#somerecent {
+  margin-top: 6rem;
+
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 30px;
+}
+.recent {
+  background-color: #f0f0f1;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 20px;
+}
+.recentimg {
+  width: 300px;
+}
+footer {
+  height: auto;
+  background-color: #202020;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: 50px;
+  padding: 4rem 0;
+}
+#sociallinks {
+  display: flex;
+  color: gray;
+  gap: 1.5rem;
+}
+footer h2 {
+  padding-bottom: 1rem;
+}
+.Quicklinks p {
+  color: #a0a0a0;
+}
+.contactp p {
+  color: #a0a0a0;
+}
+.Quicklinks p:hover {
+  color: white;
+  transition: all ease 500ms;
+  cursor: pointer;
+}
+.contactp p:hover {
+  color: white;
+  transition: all ease 500ms;
+  cursor: pointer;
+}
+.icon:hover {
+  color: white;
+  transition: all ease 500ms;
+  cursor: pointer;
+}
+#copyright {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    padding: 0 3rem;
+    align-items: baseline;
+  
+}
+#copyright i{
+  font-size: 1.5rem;
+}
+#linkedin{
+  display: flex;
+  gap: 5px;
+}
+
+#copyright p {
+  color: #a0a0a0;
+}
+#mainaboutus {
+  height: auto;
+  background-image: url("photos/about\ us.jpg");
+  background-position: 50%;
+  background-size: cover;
+  object-fit: cover;
+}
+#aboutusfilter {
+  height: 34rem;
+  background-color: rgb(0 0 0 / 55%);
+}
+#maincontent {
+  text-align: center;
+  padding-top: 5rem;
+}
+#strategy {
+  display: flex;
+  margin-top: 6rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: 50px;
+}
+#counter {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7rem;
+}
+#line {
+  margin-top: 8rem;
+}
+#teammembers {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#membersimgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.membercontent {
+  background-position: 50%;
+  background-size: cover;
+  object-fit: cover;
+  height: 20rem;
+  display: flex;
+}
+
+.memberfilter {
+  height: 20rem;
+  background-color: rgb(0 0 0 / 95%);
+  width: 100%;
+  gap: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+.membericon {
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 1.5rem;
+}
+.membercontent:hover {
+  .memberfilter {
+    display: flex;
+  }
+}
+#Free {
+  background-image: url("photos/free.jpg");
+  background-position: 30%;
+  background-size: 90%;
+  height: 30rem;
+}
+@media only screen and (max-width: 992px) {
+  #Free{
+    background-repeat: no-repeat;
+   background-position: 50%;
+  
+  }
+
+}
+#freefilter {
+  height: 30rem;
+  background-color: rgb(0 0 0 / 55%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+/* #252525 */
+#freebutton {
+  background-color: black;
+  color: white;
+  padding: 0.8rem 2.5rem;
+  border: 0;
+  border-radius: 3px;
+}
+#freebutton:hover {
+  background-color: #252525;
+  transition: all ease 400ms;
+}
+#mainportfolio {
+  background-image: url("photos/mainport.jpg");
+  height: 34rem;
+  background-position: 50%;
+  background-size: cover;
+  object-fit: cover;
+}
+#portfoliofilter {
+  height: 34rem;
+  background-color: rgb(0 0 0 / 46%);
+}
+#Brandlist {
+  margin-top: 6rem;
+}
+#Brandlist ul {
+  list-style: none;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 450;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.Brandli:hover {
+  cursor: pointer;
+  border-bottom: 0.5px solid black;
+  transition: all ease 500ms;
+}
+#Branding {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 3rem;
+}
+.brandimg {
+  background-position: 50%;
+  background-size: cover;
+  object-fit: cover;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.Brandcontent {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: baseline;
+  position: absolute;
+  bottom: 1rem;
+  padding: 1rem 1rem;
+  display: none;
+}
+.Brandwithicon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  align-content: center;
+}
+.Brandwithicon i {
+  font-size: 1.2rem;
+}
+.brandimg:hover {
+  .Brandcontent {
+    display: flex;
+  }
+}
+#mainservices {
+  background-image: url("photos/mainservice.jpg");
+  height: 34rem;
+  background-position: 50%;
+  background-size: cover;
+  object-fit: cover;
+}
+#servicefilter {
+  height: 34rem;
+  background-color: rgb(0 0 0 / 46%);
+}
+#printing {
+  display: flex;
+  margin-top: 8rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.printimg {
+  background-color: #f0f0f1;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding-bottom: 2rem;
+}
+
+#printline {
+  background-color: gray;
+  height: 1px;
+}
+.circlediv {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+#planning {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.circle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+#offer {
+  height: auto;
+  background-color: #f0f0f1;
+  margin-top: 6rem;
+  display: flex;
+  padding: 8rem 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.offerdiv {
+  height: 30rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.popular {
+  height: 40rem;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  position: relative;
+}
+.offerbutton {
+  background-color: black;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: 0;
+}
+.offerbutton:hover {
+  background-color: #252525;
+  transition: all ease 400ms;
+}
+#populardiv {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -0.5rem;
+}
+#maincontact {
+  height: 34rem;
+  background-image: url("photos/contact.jpg");
+  background-position: 50%;
+  background-size: cover;
+  object-fit: cover;
+}
+#filtercontact {
+  height: 34rem;
+  background-color: rgb(0 0 0 / 48%);
+}
+#contacts {
+  display: flex;
+  margin-top: 8rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contactdivs {
+  background-color: #f0f0f1;
+  height: 20rem;
+  width: 20%;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.circlediv {
+  border-radius: 50%;
+  background-color: black;
+  width: 90px;
+  height: 90px;
+  color: white;
+  font-size: 1.9rem;
+}
+.circlediv:hover {
+  .contacticon {
+    color: gray;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .contactdivs {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contactdivs {
+    width: 90%;
+  }
+}
+#Help {
+  background-color: #f0f0f1;
+  height: 40rem;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  width: 25%;
+  padding: 0.5rem 1rem;
+  border: 0;
+  outline: 0;
+}
+.messagediv {
+  width: 78%;
+  padding-bottom: 5rem;
+  outline: 0;
+  border: 0;
+
+  margin-top: 2rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+#inputdivs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#message {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#inputbutton {
+  margin-top: 2rem;
+  color: white;
+  background-color: #252525;
+  padding: 0.5rem 1rem;
+}
+#inputbutton:hover {
+  background-color: #656565;
+  transition: all ease 400ms;
+}
+@media only screen and (max-width: 992px) {
+  .inputs {
+    width: 90%;
+  }
+  .messagediv {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .inputs {
+    width: 90%;
+  }
+  .messagediv {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #rightclient{
+    padding-left: 4rem;
+  }
+  footer{
+    padding-left: 3rem;
+  }
+  #rightclient{
+    padding-left: 4rem;
+  }
+  footer{
+    padding-left: 3rem;
+  }
+}
+
+
