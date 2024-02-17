@@ -207,7 +207,7 @@ header ul li {
 }
 
 .content_filter {
-  background-color: black;
+  background-color: #00000075;
   height: 100vh;
   position: absolute;
   top: 0;
